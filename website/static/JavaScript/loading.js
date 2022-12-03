@@ -5,7 +5,7 @@ $(window).on('load',function(){
 
 
 $(document).ready(function(){
-//code
+// 模擬載入完成
 setTimeout(function() {
     $('#loading').fadeOut(1000);
   }, 1000);

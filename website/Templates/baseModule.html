@@ -9,27 +9,26 @@
 </head>
 
 <body>
-
-
+    <!-- 導覽列 -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <img src="{{ url_for('static', filename='Image/A4-dark.png') }}" width="30" height="30" alt=""
+            <img src="{{ url_for('static', filename='Image/A4-dark-40px.png') }}" width="30" height="30" alt=""
                 style="padding-left: 5px;">
             白紙革命
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            
-            <a class="nav-item nav-link active" href="#">關於我們</a>
-            <a class="nav-item nav-link active" href="#">聲援行動</a>
-            <a class="nav-item nav-link active" href="#">資訊專區</a>
-          </div>
-        </div>
-      </nav>
+            <div class="navbar-nav" style="padding-left: 5px;">
 
+                <a class="nav-item nav-link active" href="#">關於我們</a>
+                <a class="nav-item nav-link active" href="#">聲援行動</a>
+                <a class="nav-item nav-link active" href="#">資訊專區</a>
+            </div>
+        </div>
+    </nav>
 
     <!-- 載入畫面 -->
     <div id="loading" class="loading" style="height: 100%; width:100%;">
@@ -37,8 +36,11 @@
         <img src="{{ url_for('static', filename='Image/loading.gif') }}" alt="Loading..." class="loadimg">
     </div>
 
-
-
+    <!-- 主要內容 -->
+    <div style="padding: 15px;">
+        {% block content %}{% endblock %}
+    </div>
+    
 
 
 </body>
