@@ -1,11 +1,14 @@
-(function($){
-    $(window).load(function(){
-        $('#begin').fadeOut();
-        $('#loading').delay(200).fadeOut('slow');
-    });
- 
-	$(document).ready(function(){
-	//code
-	})
- 
-})(jQuery);
+
+$(window).on('load',function(){
+    $('#begin').fadeOut();
+});
+
+
+$(document).ready(function(){
+//code
+setTimeout(function() {
+    $('#loading').fadeOut(1000);
+  }, 2000);
+
+     
+});
