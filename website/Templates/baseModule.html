@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>{% block title %}{% endblock %}</title>
 </head>
 
 <body>
     <!-- 導覽列 -->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="{{ url_for('static', filename='Image/A4-dark-40px.png') }}" width="30" height="30" alt=""
@@ -59,7 +61,6 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='styleSheet/home.css') }}">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     crossorigin="anonymous">
-
 
 {% block script %}{% endblock %}
 
