@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleSheet/style.css') }}">
     <title>{% block title %}{% endblock %}</title>
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand position-Fix" href="/">
             <img src="{{ url_for('static', filename='Image/A4-dark.png') }}" width="30" height="30" alt=""
                 style="padding-left: 5px;">
             白紙革命
@@ -22,10 +22,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            
-            <a class="nav-item nav-link active" href="#">關於我們</a>
-            <a class="nav-item nav-link active" href="#">聲援行動</a>
-            <a class="nav-item nav-link active" href="#">資訊專區</a>
+            <a class="nav-item nav-link active" href="/about-us">關於我們</a>
+            <a class="nav-item nav-link active" href="/support-us">聲援行動</a>
+            <a class="nav-item nav-link active" href="/information">資訊專區</a>
           </div>
         </div>
       </nav>
