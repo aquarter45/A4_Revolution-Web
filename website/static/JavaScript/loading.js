@@ -8,7 +8,7 @@ $(document).ready(function(){
 //code
 setTimeout(function() {
     $('#loading').fadeOut(1000);
-  }, 2000);
+  }, 1000);
 
      
 });
