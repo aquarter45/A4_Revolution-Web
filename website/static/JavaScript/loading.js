@@ -1,12 +1,12 @@
 $(window).on('load',function(){
-  $('#begin').fadeOut();
+  $('.begin').fadeOut();
 });
 
 
 $(document).ready(function(){
 //code
 setTimeout(function() {
-  $('#loading').fadeOut(1000);
+  $('.loading').fadeOut(1000);
 }, 1000);
 
    
