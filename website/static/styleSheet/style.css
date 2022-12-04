@@ -1,4 +1,10 @@
 /*載入畫面*/
+#nav{
+    display: none;
+}
+.content{
+    display: none;
+}
 .loading {
     position: fixed;
     z-index: 998;
@@ -22,10 +28,52 @@
     left: 0px;
     bottom: 0;
     right: 0;
-    height: 200px;
+    height: 300px;
+}
+.slogan_load{
+    display: none;
+    position: fixed;
+    z-index: 998;
+    height: 100%;
+    width: 100%;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left:   0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: rgba(0, 0, 0, 35) 0px 0px 5px;
+}
+.slogan{
+    position: absolute;
+    text-decoration: none;
+    font-size: 30px;
+    color: #000;
+    top: 50%; /* ★ */
+    left: 50%;
+    height: 100px;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
 }
 /*BaseModule*/
 .position-Fix{
     margin-left: 10px;
 }
+.content{
+    padding: 0px 15px 0px 15px;
+}
 /*Home.html*/
+
+/*our_goals.html*/
+.our_goals-Title{
+    width: 100%;
+    height: 50px;
+    border: 0;
+    margin: 0;
+    padding: auto;
+    font-size: 30px;
+    text-align: center;
+}
